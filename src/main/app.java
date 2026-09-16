@@ -5,6 +5,10 @@ public class app {
     static String[] pakli = new String[22];
 
     public static void main(String[] args) {
+        program();
+    }
+
+    public static void program() {
         feltolt();
         for (int i = 0; i < 3; i++) {
             kiark();//1tömb
