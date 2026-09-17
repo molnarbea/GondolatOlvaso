@@ -28,7 +28,7 @@ public class app {
         }
     }
 
-    private static void melyik() {
+    private static int melyik() {
         System.out.print("\nMelyik oszlop (1-3): ");
         int oszlop = sc.nextInt();
         while(oszlop < 1 || oszlop > 3){
@@ -39,8 +39,8 @@ public class app {
         return oszlop;
     }
 
-    private static String[] kever(int oszlop) {
-        static String[] regiPakli = pakli.clone();
+    private static void kever(int oszlop) {
+        String[] regiPakli = pakli.clone();
         switch (oszlop) {
             case 1:
                 for (int i = 1; i < 8; i++) {
@@ -67,7 +67,7 @@ public class app {
     }
 
     private static void ezVolt() {
-        System.out.println("A választott kártya: "+kevert[11]);
+        System.out.println("A választott kártya: "+pakli[11]);
     }
 
     private static void feltolt() {
